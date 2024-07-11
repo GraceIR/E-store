@@ -8,8 +8,10 @@ a {
 body {
     font-family: 'poppins', sans-serif;
 }
-.container{
+@media(min-width: 1200px){
+ .container{
     width: 1140px !important;
+  }
 }
 /*variable delcare*/
 :root {
@@ -21,6 +23,7 @@ body {
 header{
     width:100%;
     padding: 32px 0;
+    background-color: var(--bg-color);
 }
 .nav-item{
     margin: 0 12px;
@@ -362,8 +365,8 @@ footer .f-item ul li a{
   transition: 0.5s;
 }
 footer .f-item ul li a:hover{
-    filter: grayscale(0);
-    transition: 0.5s;
+    background-color: #ff3368;
+    border: none;
 }
 
 footer .f-item p{
@@ -405,6 +408,23 @@ footer .Copyright p{
     line-height: 2;
     margin-bottom: 32px;
 }
-footer .Copyright p a .gracie-link{
-    color: #ff3368;
+footer .Copyright p i a{
+    color:#ff3368;
+    transition: 0.5s;
+}
+footer .Copyright .f-icon a{
+    margin-left: 0px;
+    margin-right: 25px;
+    padding: 5px 11px;
+    text-align: right;
+}
+footer .Copyright .f-icon a i{
+    font-size: 15px;
+    color: #7f7f7f;
+}
+footer .Copyright .f-icon a:hover{
+  background-color: #ff3368;
+}
+footer .Copyright .f-icon a:hover i{
+    color: white;
 }
